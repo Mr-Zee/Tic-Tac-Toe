@@ -10,20 +10,21 @@ body {
     margin: 0;
     background: #ff5757;
     font-family: Arial, Helvetica, sans-serif;
+    color: #6a0f0f;
 }
 
 .board {
     height: 350px;
     width: 350px;
-    /* background: yellow; */
+    /* background: #6d222283; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
 
 .cell {
-    border-bottom: 5px solid black;
-    border-right: 5px solid black;
+    border-bottom: 5px solid #6a0f0f;
+    border-right: 5px solid #6a0f0f;
     font-size: 60px;
     text-align: center;
     line-height: 110px;
@@ -40,5 +41,5 @@ body {
 }
 
 .highlight {
-    background: #d91a1a;
+    background: #b81818d5;
 }
