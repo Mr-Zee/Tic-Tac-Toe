@@ -1,0 +1,44 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #ffc857;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.board {
+    height: 350px;
+    width: 350px;
+    /* background: yellow; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.cell {
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    font-size: 60px;
+    text-align: center;
+    line-height: 110px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cell:nth-child(3n) {
+    border-right: none;
+}
+
+.cell:nth-child(n+7) {
+    border-bottom: none;
+}
+
+.highlight {
+    background: #ffb31a;
+}
